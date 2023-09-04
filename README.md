@@ -1,5 +1,6 @@
 # Android Ndk Example
 How to include c++ library in android. Here is the quick and super simple example of "How you can add any c++ library in your android project and use its functions".
+
 **Note:This tutorial is based on the project provided in the repo. To use the whole working project just clone it.**
 ### Requirements for this tutorial
 1. You are already familiar with NDK
