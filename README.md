@@ -148,21 +148,15 @@ add_subdirectory(
 
 So the overall resulting main CMakeLists.txt file will be:
 ```
-# For more information about using CMake with Android Studio, read the
-# documentation: https://d.android.com/studio/projects/add-native-code.html.
-# For more examples on how to use CMake, see https://github.com/android/ndk-samples.
 
 # Sets the minimum CMake version required for this project.
 cmake_minimum_required(VERSION 3.22.1)
 
-# Declares the project name. The project name can be accessed via ${ PROJECT_NAME},
-# Since this is the top level CMakeLists.txt, the project name is also accessible
-# with ${CMAKE_PROJECT_NAME} (both CMake variables are in-sync within the top level
-# build script scope).
 project("nativelib")
 
 #This tells the NDK to add header file. So we can access all functiions in JNI
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../../../MyCalculator)
+
 #This tells the NDK to include our library. The name should be same as we used before in add_library() function
 add_subdirectory(
         ${CMAKE_CURRENT_SOURCE_DIR}/../../../../MyCalculator
